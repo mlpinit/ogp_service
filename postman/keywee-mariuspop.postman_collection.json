@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "9d3e0f28-1f7e-9764-8441-d4cb2edc853e",
+		"name": "keywee-mariuspop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "kw",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://marius.pop.hiring.keywee.io/stories?url=https://ogp.me/",
+					"protocol": "http",
+					"host": [
+						"marius",
+						"pop",
+						"hiring",
+						"keywee",
+						"io"
+					],
+					"path": [
+						"stories"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "https://ogp.me/"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://marius.pop.hiring.keywee.io/stories/6d3851e5-59b4-451b-be65-5ccb3b77283c",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://marius.pop.hiring.keywee.io/stories/6d3851e5-59b4-451b-be65-5ccb3b77283c",
+					"protocol": "http",
+					"host": [
+						"marius",
+						"pop",
+						"hiring",
+						"keywee",
+						"io"
+					],
+					"path": [
+						"stories",
+						"6d3851e5-59b4-451b-be65-5ccb3b77283c"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "4f5541d0-47c0-42c1-9527-d74664955ac8",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "8862da41-278c-49c3-884a-dfcd000071d7",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

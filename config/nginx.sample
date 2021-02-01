@@ -1,0 +1,39 @@
+upstream ogp_service {
+  server              unix:/tmp/puma.sock;
+}
+
+server {
+  listen              *:80;
+  server_name         localhost;
+
+  access_log          /var/log/nginx/ogp_service_access.log;
+
+  root /var/www/ogp_service/public;
+
+  try_files $uri/index.html $uri @app;
+
+  location /favicon.ico {
+    root              /var/www/my_app/public/assets/favicon.ico;
+    gzip_static       on;
+    expires           max;
+    add_header        Cache-Control public;
+  }
+
+  location / {
+    root              /var/www/ogp_service/public;
+    try_files         $uri @app;
+    gzip_static       on;
+    expires           max;
+    add_header        Cache-Control public;
+  }
+
+  location @app {
+    proxy_pass        http://ogp_service;
+    proxy_set_header  X-Real-IP  $remote_addr;
+    proxy_set_header  X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header  X-Forwarded-Proto http;
+    proxy_set_header  Host $http_host;
+    proxy_redirect    off;
+    proxy_next_upstream error timeout invalid_header http_502;
+  }
+}

@@ -1,0 +1,95 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://twitter.com/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Security-Policy:
+      - 'connect-src ''self'' blob: https://*.giphy.com https://*.pscp.tv https://*.video.pscp.tv
+        https://*.twimg.com https://api.twitter.com https://api-stream.twitter.com
+        https://ads-api.twitter.com https://caps.twitter.com https://media.riffsy.com
+        https://pay.twitter.com https://sentry.io https://ton.twitter.com https://twitter.com
+        https://upload.twitter.com https://www.google-analytics.com https://app.link
+        https://api2.branch.io https://bnc.lt https://vmap.snappytv.com https://vmapstage.snappytv.com
+        https://vmaprel.snappytv.com https://vmap.grabyo.com https://dhdsnappytv-vh.akamaihd.net
+        https://pdhdsnappytv-vh.akamaihd.net https://mdhdsnappytv-vh.akamaihd.net
+        https://mdhdsnappytv-vh.akamaihd.net https://mpdhdsnappytv-vh.akamaihd.net
+        https://mmdhdsnappytv-vh.akamaihd.net https://mdhdsnappytv-vh.akamaihd.net
+        https://mpdhdsnappytv-vh.akamaihd.net https://mmdhdsnappytv-vh.akamaihd.net
+        https://dwo3ckksxlb0v.cloudfront.net ; default-src ''self''; form-action ''self''
+        https://twitter.com https://*.twitter.com; font-src ''self'' https://*.twimg.com;
+        frame-src ''self'' https://twitter.com https://mobile.twitter.com https://pay.twitter.com
+        https://cards-frame.twitter.com ; img-src ''self'' blob: data: https://*.cdn.twitter.com
+        https://ton.twitter.com https://*.twimg.com https://analytics.twitter.com
+        https://cm.g.doubleclick.net https://www.google-analytics.com https://www.periscope.tv
+        https://www.pscp.tv https://media.riffsy.com https://*.giphy.com https://*.pscp.tv
+        https://*.periscope.tv https://prod-periscope-profile.s3-us-west-2.amazonaws.com
+        https://platform-lookaside.fbsbx.com https://scontent.xx.fbcdn.net https://*.googleusercontent.com;
+        manifest-src ''self''; media-src ''self'' blob: https://twitter.com https://*.twimg.com
+        https://*.vine.co https://*.pscp.tv https://*.video.pscp.tv https://*.giphy.com
+        https://media.riffsy.com https://dhdsnappytv-vh.akamaihd.net https://pdhdsnappytv-vh.akamaihd.net
+        https://mdhdsnappytv-vh.akamaihd.net https://mdhdsnappytv-vh.akamaihd.net
+        https://mpdhdsnappytv-vh.akamaihd.net https://mmdhdsnappytv-vh.akamaihd.net
+        https://mdhdsnappytv-vh.akamaihd.net https://mpdhdsnappytv-vh.akamaihd.net
+        https://mmdhdsnappytv-vh.akamaihd.net https://dwo3ckksxlb0v.cloudfront.net;
+        object-src ''none''; script-src ''self'' ''unsafe-inline'' https://*.twimg.com   https://www.google-analytics.com
+        https://twitter.com https://app.link  ''nonce-MGVlNDM3OTYtMThjNS00NTE0LWE5NzQtNTY4YmU0M2NmZWE1'';
+        style-src ''self'' ''unsafe-inline'' https://*.twimg.com; worker-src ''self''
+        blob:; report-uri https://twitter.com/i/csp_report?a=O5RXE%3D%3D%3D&ro=false'
+      Content-Type:
+      - text/html; charset=utf-8
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Date:
+      - Sun, 31 Jan 2021 01:19:47 GMT
+      Expiry:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 31 Jan 2021 01:19:47 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_b
+      Set-Cookie:
+      - guest_id=v1%3A161205598795244887; Max-Age=63072000; Expires=Tue, 31 Jan 2023
+        01:19:47 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - personalization_id="v1_Gxds4l82Wij046UrVhmVHA=="; Max-Age=63072000; Expires=Tue,
+        31 Jan 2023 01:19:47 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=631138519
+      Transfer-Encoding:
+      - chunked
+      X-Connection-Hash:
+      - 987fa96f4e1e11a75f43760dd3356ac9
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Powered-By:
+      - Express
+      X-Response-Time:
+      - '17'
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PCFET0NUWVBFIGh0bWw+CjxodG1sIGRpcj0ibHRyIiBsYW5nPSJlbiI+CjxoZWFkPgogIDxtZXRhIGNoYXJzZXQ9InV0Zi04IiAvPgogIDxtZXRhIG5hbWU9InZpZXdwb3J0IgogICAgY29udGVudD0id2lkdGg9ZGV2aWNlLXdpZHRoLGluaXRpYWwtc2NhbGU9MSxtYXhpbXVtLXNjYWxlPTEsdXNlci1zY2FsYWJsZT0wLHZpZXdwb3J0LWZpdD1jb3ZlciIgLz4KICA8c3R5bGU+CiAgICBib2R5IHsKICAgICAgLW1zLW92ZXJmbG93LXN0eWxlOiBzY3JvbGxiYXI7CiAgICAgIG92ZXJmbG93LXk6IHNjcm9sbDsKICAgICAgb3ZlcnNjcm9sbC1iZWhhdmlvci15OiBub25lOwogICAgfQoKICAgIC5lcnJvckNvbnRhaW5lciB7CiAgICAgIGJhY2tncm91bmQtY29sb3I6ICNGRkY7CiAgICAgIGNvbG9yOiAjMEYxNDE5OwogICAgICBtYXgtd2lkdGg6IDYwMHB4OwogICAgICBtYXJnaW46IDAgYXV0bzsKICAgICAgcGFkZGluZzogMTAlOwogICAgICBmb250LWZhbWlseTogSGVsdmV0aWNhLCBzYW5zLXNlcmlmOwogICAgICBmb250LXNpemU6IDE2cHg7CiAgICB9CgogICAgLmVycm9yQnV0dG9uIHsKICAgICAgbWFyZ2luOiAzZW0gMDsKICAgIH0KCiAgICAuZXJyb3JCdXR0b24gYSB7CiAgICAgIGJhY2tncm91bmQ6ICMxREExRjI7CiAgICAgIGJvcmRlci1yYWRpdXM6IDIuNWVtOwogICAgICBjb2xvcjogd2hpdGU7CiAgICAgIHBhZGRpbmc6IDFlbSAyZW07CiAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTsKICAgIH0KCiAgICAuZXJyb3JCdXR0b24gYTpob3ZlciwKICAgIC5lcnJvckJ1dHRvbiBhOmZvY3VzIHsKICAgICAgYmFja2dyb3VuZDogcmdiKDI2LCAxNDUsIDIxOCk7CiAgICB9CgogICAgLmVycm9yRm9vdGVyIHsKICAgICAgY29sb3I6ICM2NTc3ODY7CiAgICAgIGZvbnQtc2l6ZTogODAlOwogICAgICBsaW5lLWhlaWdodDogMS41OwogICAgICBwYWRkaW5nOiAxZW0gMDsKICAgIH0KCiAgICAuZXJyb3JGb290ZXIgYSwKICAgIC5lcnJvckZvb3RlciBhOnZpc2l0ZWQgewogICAgICBjb2xvcjogIzY1Nzc4NjsKICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lOwogICAgICBwYWRkaW5nLXJpZ2h0OiAxZW07CiAgICB9CgogICAgLmVycm9yRm9vdGVyIGE6aG92ZXIsCiAgICAuZXJyb3JGb290ZXIgYTphY3RpdmUgewogICAgICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTsKICAgIH0KCiAgPC9zdHlsZT4KPC9oZWFkPgo8Ym9keT4KICA8ZGl2IGNsYXNzPSJlcnJvckNvbnRhaW5lciI+CiAgICA8aW1nIHdpZHRoPSI0NiIgaGVpZ2h0PSIzOCIKICAgICAgc3Jjc2V0PSJodHRwczovL2Ficy50d2ltZy5jb20vZXJyb3JzL2xvZ280NngzOC5wbmcgMXgsIGh0dHBzOi8vYWJzLnR3aW1nLmNvbS9lcnJvcnMvbG9nbzQ2eDM4QDJ4LnBuZyAyeCIKICAgICAgc3JjPSJodHRwczovL2Ficy50d2ltZy5jb20vZXJyb3JzL2xvZ280NngzOC5wbmciIGFsdD0iVHdpdHRlciIgLz4KICAgIDxoMT5UaGlzIGJyb3dzZXIgaXMgbm8gbG9uZ2VyIHN1cHBvcnRlZC48L2gxPgogICAgPHA+CiAgICAgIFBsZWFzZSBzd2l0Y2ggdG8gYSBzdXBwb3J0ZWQgYnJvd3NlciB0byBjb250aW51ZSB1c2luZyB0d2l0dGVyLmNvbS4gWW91IGNhbiBzZWUgYSBsaXN0IG9mIHN1cHBvcnRlZCBicm93c2VycyBpbiBvdXIgSGVscCBDZW50ZXIuCiAgICA8L3A+CiAgICA8cCBjbGFzcz0iZXJyb3JCdXR0b24iPjxhIGhyZWY9Imh0dHBzOi8vaGVscC50d2l0dGVyLmNvbS91c2luZy10d2l0dGVyL3R3aXR0ZXItc3VwcG9ydGVkLWJyb3dzZXJzIj5IZWxwIENlbnRlcjwvYT4KICAgIDwvcD4KICAgIDxwIGNsYXNzPSJlcnJvckZvb3RlciI+CiAgICAgIDxhIGhyZWY9Imh0dHBzOi8vdHdpdHRlci5jb20vdG9zIj5UZXJtcyBvZiBTZXJ2aWNlPC9hPgogICAgICA8YSBocmVmPSJodHRwczovL3R3aXR0ZXIuY29tL3ByaXZhY3kiPlByaXZhY3kgUG9saWN5PC9hPgogICAgICA8YSBocmVmPSJodHRwczovL3N1cHBvcnQudHdpdHRlci5jb20vYXJ0aWNsZXMvMjAxNzA1MTQiPkNvb2tpZSBQb2xpY3k8L2E+CiAgICAgIDxhIGhyZWY9Imh0dHBzOi8vbGVnYWwudHdpdHRlci5jb20vaW1wcmludCI+SW1wcmludDwvYT4KICAgICAgPGEgaHJlZj0iaHR0cHM6Ly9idXNpbmVzcy50d2l0dGVyLmNvbS9lbi9oZWxwL3Ryb3VibGVzaG9vdGluZy9ob3ctdHdpdHRlci1hZHMtd29yay5odG1sIj5BZHMgaW5mbzwvYT4KICAgICAgwqkgMjAyMSBUd2l0dGVyLCBJbmMuCiAgICA8L3A+CgogIDwvZGl2Pgo8L2JvZHk+CjwvaHRtbD4=
+  recorded_at: Sun, 31 Jan 2021 01:19:48 GMT
+recorded_with: VCR 6.0.0
